@@ -1,0 +1,188 @@
+/* Preserved soft-peach theme with subtle upgrades and enhanced contrast */
+/* Fonts: Poppins (body) + Quicksand (headings) */
+:root{
+    --bg: #fff7f2;
+    --card: #ffffff;
+    --accent: #d86a4e; /* Deeper Red/Peach for better contrast */
+    --accent2: #b1472e; /* Even deeper for gradient end */
+    --muted: #6f4f49;
+    --shadow: rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    --pill: #fff2e8;
+    --dark-text: #3a2b27; /* Darker text for main body/headings */
+    --light-contrast: #fcf8f6; /* Very light, subtle cream/warm grey for contrast */
+}
+
+/* Reset */
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family:"Poppins",system-ui,Segoe UI,Arial;
+    background:linear-gradient(180deg,var(--bg),#ffebe0);
+    color:var(--dark-text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.45;
+}
+
+/* Header - COMPACTED */
+.site-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px; /* Reduced gap */
+    padding:10px 20px; /* Reduced vertical padding */
+    border-bottom:1px solid rgba(0,0,0,0.06);
+}
+.brand{display:flex;gap:8px;align-items:center} /* Reduced gap */
+.logo{font-size:24px} /* Smaller logo */
+.site-header h1{margin:0;color:var(--accent2);font-weight:700; font-size: 20px;} /* Slightly larger main title */
+.tagline{margin:0;color:var(--muted);font-size:11px} /* Smaller tagline */
+
+/* Nav - COMPACTED */
+.main-nav a{margin-left:8px;text-decoration:none;color:#b87856;font-weight:600;padding:6px 10px;border-radius:8px; transition: all 0.2s ease;} /* Reduced padding and border-radius */
+.main-nav a.active{background:linear-gradient(90deg,var(--accent),var(--accent2));color:white;box-shadow:0 4px 12px rgba(182,123,87,0.25)}
+.main-nav a:not(.active):hover{background-color: var(--pill);}
+
+/* Container & cards */
+.container{width:92%;max-width:980px;margin:0 auto;padding:12px 0} /* Reduced container vertical padding */
+.card{background:var(--card);border-radius:14px;padding:16px;box-shadow:0 10px 30px var(--shadow)} /* Reduced card size */
+
+/* Headings */
+h1,h2,h3,h4{font-family:"Quicksand", "Poppins", sans-serif;margin:0}
+h2,h3{font-weight:700}
+.section-heading{font-size:14px;margin-bottom:6px;color:var(--accent)} /* Smaller section heading */
+.title{font-size:22px;color:var(--accent2);margin:8px 0} /* Smaller title */
+.subtitle{color:var(--muted);margin:6px 0; font-size: 14px;}
+
+/* Hero centered vertically - COMPACTED */
+.hero-center{
+    min-height:50vh; /* Reduced height */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:10px; /* Reduced gap */
+    padding:30px 20px; /* Reduced padding */
+}
+.hero-title{font-size:34px;color:var(--accent)} /* Reduced title size */
+.hero-sub{color:var(--muted);max-width:720px; font-size: 15px;}
+.hero-paw{width:220px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,0.12)} /* Smaller paw image */
+.centered-paw{margin-top:10px}
+
+/* Buttons */
+.btn{border:0;padding:10px 16px;border-radius:10px;cursor:pointer;font-weight:600; transition: all 0.2s ease; font-size: 14px;} /* Smaller buttons */
+.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff}
+.primary:hover{opacity:0.9; transform: translateY(-1px);}
+.outline{background:transparent;border:1px solid rgba(0,0,0,0.12); color:var(--dark-text)}
+.outline:hover{background-color: var(--pill);}
+.full{width:100%}
+.small{padding:6px 8px;font-size:12px} /* Smaller small buttons */
+
+/* Top-row/back/home controls */
+.top-row{padding:8px 20px} /* Reduced vertical padding */
+.back-btn,.home-btn{
+    background: linear-gradient(90deg,#ffe6cf,#ffc7ad);
+    color:var(--accent2);
+    border: none;
+    padding: 8px 12px; /* Smaller button */
+    font-weight:700;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+    position: relative;
+    top: -6px; /* raise button slightly so it sits higher */
+    transition: all 0.2s ease;
+}
+.back-btn:hover,.home-btn:hover{transform: translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,0.22)}
+
+/* Login card */
+.login-card{max-width:380px;margin:15px auto;background:#f9e7df;padding:20px;border-radius:14px} /* Smaller login card */
+.login-card h2{color:var(--accent2);margin-bottom:10px}
+input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e1c5b6;margin-top:6px;font-family:"Poppins"}
+
+/* Pets */
+.pets-header-info {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.small-count {
+    font-size: 14px;
+    font-weight: 500;
+}
+.categories{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px} /* Reduced category spacing */
+.cat-btn{padding:8px 12px;border-radius:8px;font-weight: 600; color: var(--muted); transition: all 0.1s ease;} /* Smaller category buttons */
+.cat-btn:hover{background-color: #ffd8c7; color: var(--accent2);}
+
+.pets-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;align-items:start;grid-auto-rows:auto} /* Ensure items align at the top */
+/* make sure any .pet-card inside the grid (not only direct children) fills its cell */
+.pets-grid .pet-card{width:100%;display:block;box-sizing:border-box}
+.pet-card{background:linear-gradient(180deg,#fff,#fff8f0);padding:12px;border-radius:14px;box-shadow:0 8px 24px var(--shadow)} /* Reduced pet card padding/shadow */
+.pet-card h3{margin-top:2px; color: var(--accent2); font-size: 18px;}
+.pet-card p{font-size:12px; margin-bottom: 6px;} /* Smaller text */
+.pet-card img{width:100%;height:120px;object-fit:cover;border-radius:10px;margin-bottom:6px} /* Smaller image height */
+.actions{display:flex;gap:8px;align-items:center} /* Reduced action gap */
+.like{background: none; border: none; font-size: 20px; cursor: pointer; color: var(--muted); padding: 0;}
+.like:hover{color: var(--accent);}
+
+/* Pet details - Reduced spacing */
+.pet-box{max-width:600px;margin:15px auto;padding:18px; background: var(--light-contrast);}
+.pet-img{width:100%;height:250px;object-fit:cover;border-radius:14px;margin-bottom:12px}
+.pet-box #pet-description {margin-top: 10px; font-size: 14px;}
+.info-box,.health-box{background:#fff2dc;padding:10px;border-radius:8px;margin-top:8px; font-weight: 500; font-size: 14px;}
+
+/* Adoption Form - Reduced spacing */
+.form-card{max-width:600px;margin:15px auto;padding:18px; background: var(--light-contrast);}
+label{display:block;margin-top:10px;font-weight:600;color:var(--dark-text) ;font-size: 14px;}
+textarea{min-height:100px;resize:vertical}
+
+/* Success card - Reduced spacing */
+.success-card{max-width:480px;margin:20px auto;padding:18px;text-align:center; background: var(--light-contrast);}
+.tick{font-size:50px;color:#38a841;margin-bottom:4px}
+
+/* Profile - Reduced spacing */
+.profile-card{max-width:720px;margin:15px auto;padding:18px; background: var(--light-contrast);}
+.profile-head{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.profile-img{width:80px;height:80px;border-radius:14px;object-fit:cover}
+.profile-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.profile-link{padding:8px 12px;border-radius:10px;font-weight: 600; font-size: 14px;}
+.profile-link:hover{background: #ffd8c7; color: var(--accent2);}
+.profile-list{margin-top:10px}
+.list-item{padding:8px 0;border-bottom:1px solid #f0e6df; font-size: 14px;}
+
+/* About images */
+.about-images{display:flex;gap:12px;margin-top:12px} /* Reduced gap */
+.about-img{width:48%;border-radius:14px;object-fit:cover}
+
+
+/* Responsive */
+@media(max-width:880px){
+  .pets-grid{grid-template-columns:1fr} 
+  .hero-title{font-size:28px}
+  .hero-paw{width:180px}
+  .about-images{flex-direction:column}
+  .about-img{width:100%}
+}
+@media(max-width:500px){
+    .site-header {flex-direction: column; align-items: flex-start;}
+    .main-nav {margin-top: 8px;}
+    .main-nav a {margin-left: 0; margin-right: 8px;}
+}
+
+/* Give each page a small top padding so content sits a bit below the header */
+.page{padding-top:5px}
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.site-footer p {
+    margin: 4px 0;
+}

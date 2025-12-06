@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pawfect Homes</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+    <div class="brand">
+      <span class="logo">🐾</span>
+      <div>
+        <h1>Pawfect Homes</h1>
+        <p class="tagline">Find your furry best friend today</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="#index" class="nav-link active" data-target="index">Home</a>
+      <a href="#pets" class="nav-link" data-target="pets">Pets</a>
+      <a href="#profile" class="nav-link" data-target="profile">Profile</a>
+      <a href="#about" class="nav-link" data-target="about">About</a>
+    </nav>
+  </header>
+
+    <section id="index" class="page">
+    <div class="hero-center">
+      <h2 class="hero-title">Adopt Love. Adopt Happiness.</h2>
+      <p class="hero-sub">Every pet deserves a warm, safe, and loving home. Start your adoption journey today.</p>
+
+      <div class="hero-cta">
+        <button id="explore-btn" class="btn primary">Explore Pets</button>
+      </div>
+
+      <img src="paw.jpg.jpg" alt="paw" class="hero-paw centered-paw">
+    </div>
+  </section>
+
+    <section id="login" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="index">Back</button>
+    </div>
+
+    <div class="card login-card">
+      <h2>Welcome Back!</h2>
+      <form id="login-form" autocomplete="off">
+        <label>Email</label>
+        <input id="login-email" type="email" autocomplete="off" required>
+        <label>Password</label>
+        <input id="login-password" type="password" autocomplete="new-password" required>
+        <button type="submit" class="btn primary full">Login</button>
+      </form>
+    </div>
+  </section>
+
+    <section id="pets" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="index">Back</button>
+      </div>
+
+    <div class="container">
+      <h3 class="section-heading">Categories of Animals</h3>
+      <div class="categories">
+        <button class="cat-btn" data-cat="all">All</button>
+        <button class="cat-btn" data-cat="dogs">Dogs</button>
+        <button class="cat-btn" data-cat="cats">Cats</button>
+        <button class="cat-btn" data-cat="birds">Birds</button>
+        <button class="cat-btn" data-cat="rabbits">Rabbits</button>
+      </div>
+
+      <div class="pets-header-info">
+        <h2 class="title">Meet Our Pets</h2>
+        <span id="pet-count" class="muted small-count"></span>
+      </div>
+
+    <div id="pets-container" class="pets-grid">
+    <div class="pet-card" data-id="Bruno" data-type="dogs">
+                    <img src="brunooo.jpg" alt="Bruno">
+                    <h3>Bruno</h3>
+                    <p>Friendly, playful and loyal companion.</p>
+                    <div class="actions">
+                        <button class="btn small view">View</button>
+                        <button class="btn small adopt" data-pet="Bruno">Adopt Bruno</button>
+                        <button class="like">♡</button>
+                    </div>
+                </div>
+
+                <div class="pet-card" data-id="Fluffy" data-type="cats">
+                    <img src="flufy.png" alt="Fluffy">
+                    <h3>Fluffy</h3>
+                    <p>Calm, loving and independent.</p>
+                    <div class="actions">
+                        <button class="btn small view">View</button>
+                        <button class="btn small adopt" data-pet="Fluffy">Adopt Fluffy</button>
+                        <button class="like">♡</button>
+                    </div>
+                </div>
+
+                <div class="pet-card" data-id="Flyn" data-type="birds">
+                    <img src="cockaaa.jpg" alt="Flyn">
+                    <h3>Flyn </h3>
+                    <p>Colorful friend that brings joy.</p>
+                    <div class="actions">
+                        <button class="btn small view">View</button>
+                        <button class="btn small adopt" data-pet="Flyn">Adopt Flyn</button>
+                        <button class="like">♡</button>
+                    </div>
+                </div>
+
+                <div class="pet-card" data-id="Luna" data-type="rabbits">
+                    <img src="rab2.webp" alt="Luna">
+                    <h3>Luna</h3>
+                    <p>Soft, gentle and family-friendly.</p>
+                    <div class="actions">
+                        <button class="btn small view">View</button>
+                        <button class="btn small adopt" data-pet="Luna">Adopt Luna</button>
+                        <button class="like">♡</button>
+                    </div>
+                </div>
+                <div class="pet-card" data-id="Milo" data-type="dogs">
+                    <img src="milo.jpg"Milo">
+                    <h3>Milo</h3>
+                    <p>Energetic and playful.</p>
+                    <div class="actions">
+                        <button class="btn small view">View</button>
+                        <button class="btn small adopt" data-pet="Milo">Adopt Milo</button>
+                        <button class="like">♡</button>
+                    </div>
+                </div>
+
+                <div class="pet-card" data-id="Bella" data-type="cats">
+                    <img src="pcat.jpg" alt="Bella">
+                    <h3>Bella</h3>
+                    <p>Soft and cuddly.</p>
+                    <div class="actions">
+                        <button class="btn small view">View</button>
+                        <button class="btn small adopt" data-pet="Bella">Adopt Bella</button>
+                        <button class="like">♡</button>
+                    </div>
+                </div>
+
+                <div class="pet-card" data-id="Coco" data-type="birds">
+                    <img src= "parrot.jpg" alt="Coco">
+                    <h3>Coco</h3>
+                    <p>Talkative and cheerful.</p>
+                    <div class="actions">
+                        <button class="btn small view">View</button>
+                        <button class="btn small adopt" data-pet="Coco">Adopt Coco</button>
+                        <button class="like">♡</button>
+                    </div>
+                </div>
+
+                <div class="pet-card" data-id="Thumper" data-type="rabbits">
+                    <img src="rab1.jpg" alt="Thumper">
+                    <h3>Thumper</h3>
+                    <p>Gentle and fluffy.</p>
+                    <div class="actions">
+                        <button class="btn small view">View</button>
+                        <button class="btn small adopt" data-pet="Thumper">Adopt Thumper</button>
+                        <button class="like">♡</button>
+                    </div>
+                </div>
+
+</div>
+</div>
+ </section>
+
+<!-- Pet Details Sections -->
+<section id="pet-details-bruno" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="pets">Back</button>
+    </div>
+    <div class="card pet-box container">
+        <img src="brunooo.jpg" alt="Bruno" class="pet-img">
+        <h2>Bruno</h2>
+        <p class="muted">Retriever • 2 months</p>
+        <p style="margin-top: 15px;">A friendly, playful, and loyal companion who loves long walks and fetch.</p>
+        <div class="info-box"><p><strong>Breed:</strong> Golden Retriever</p></div>
+        <div class="health-box">
+            <button class="btn small">Health Info</button>
+            <div style="margin-top:8px;color:var(--muted);">Vaccinated ✅ | Neutered ✅</div>
+        </div>
+        <div class="pet-actions">
+            <button class="btn primary adopt" data-pet="Bruno">Adopt</button>
+        </div>
+    </div>
+</section>
+
+<section id="pet-details-fluffy" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="pets">Back</button>
+    </div>
+    <div class="card pet-box container">
+        <img src="flufy.png"Fluffy" class="pet-img">
+        <h2>Fluffy</h2>
+        <p class="muted">Indian cat• 2 years</p>
+        <p style="margin-top: 15px;">A calm, loving, and independent cat, perfect for a quiet home.</p>
+        <div class="info-box"><p><strong>Breed:</strong> Spotted Indian cat</p></div>
+        <div class="health-box">
+            <button class="btn small">Health Info</button>
+            <div style="margin-top:8px;color:var(--muted);">Vaccinated ✅ | Spayed ✅</div>
+        </div>
+        <div class="pet-actions">
+            <button class="btn primary adopt" data-pet="Fluffy">Adopt</button>
+        </div>
+    </div>
+</section>
+
+<section id="pet-details-flyn" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="pets">Back</button>
+    </div>
+    <div class="card pet-box container">
+        <img src="cockaaa.jpg" alt="Flyn" class="pet-img">
+        <h2>Flyn</h2>
+        <p class="muted">Cockatiel • 8 months</p>
+        <p style="margin-top: 15px;">A colorful friend that brings joy with its cheerful chirps and occasional singing.</p>
+        <div class="info-box"><p><strong>Breed:</strong> Cockatiel</p></div>
+        <div class="health-box">
+            <button class="btn small">Health Info</button>
+            <div style="margin-top:8px;color:var(--muted);">Vaccinated ✅</div>
+        </div>
+        <div class="pet-actions">
+            <button class="btn primary adopt" data-pet="Flyn">Adopt</button>
+        </div>
+    </div>
+</section>
+
+<section id="pet-details-luna" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="pets">Back</button>
+    </div>
+    <div class="card pet-box container">
+        <img src="rab2.webp"Luna" class="pet-img">
+        <h2>Luna</h2>
+        <p class="muted">Holland Lop • 1 year</p>
+        <p style="margin-top: 15px;">A soft, gentle, and family-friendly rabbit, great for indoor living.</p>
+        <div class="info-box"><p><strong>Breed:</strong> Holland Lop</p></div>
+        <div class="health-box">
+            <button class="btn small">Health Info</button>
+            <div style="margin-top:8px;color:var(--muted);">Vaccinated ✅ | Neutered ✅</div>
+        </div>
+        <div class="pet-actions">
+            <button class="btn primary adopt" data-pet="Luna">Adopt</button>
+        </div>
+    </div>
+</section>
+
+<section id="pet-details-milo" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="pets">Back</button>
+    </div>
+    <div class="card pet-box container">
+        <img src="milo.jpg"Milo" class="pet-img">
+        <h2>Milo</h2>
+        <p class="muted">Labrador• 1.5 years</p>
+        <p style="margin-top: 15px;">An energetic and playful little dog with a huge personality.</p>
+        <div class="info-box"><p><strong>Breed:</strong> Labrador </p></div>
+        <div class="health-box">
+            <button class="btn small">Health Info</button>
+            <div style="margin-top:8px;color:var(--muted);">Vaccinated ✅ | Neutered ✅</div>
+        </div>
+        <div class="pet-actions">
+            <button class="btn primary adopt" data-pet="Milo">Adopt</button>
+        </div>
+    </div>
+</section>
+
+<section id="pet-details-bella" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="pets">Back</button>
+    </div>
+    <div class="card pet-box container">
+        <img src="pcat.jpg"Bella" class="pet-img">
+        <h2>Bella</h2>
+        <p class="muted">Persian cat • 1 year</p>
+        <p style="margin-top: 15px;">A beautiful, soft, and cuddly cat that enjoys lounging around.</p>
+        <div class="info-box"><p><strong>Breed:</strong> Persian cat</p></div>
+        <div class="health-box">
+            <button class="btn small">Health Info</button>
+            <div style="margin-top:8px;color:var(--muted);">Vaccinated ✅ | Spayed ✅</div>
+        </div>
+        <div class="pet-actions">
+            <button class="btn primary adopt" data-pet="Bella">Adopt</button>
+        </div>
+    </div>
+</section>
+
+<section id="pet-details-coco" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="pets">Back</button>
+    </div>
+    <div class="card pet-box container">
+        <img src="parrot.jpg" alt="Coco" class="pet-img">
+        <h2>Coco</h2>
+        <p class="muted">Macaw • 5 years</p>
+        <p style="margin-top: 15px;">A very talkative and cheerful bird, known for intelligence and mimicking sounds.</p>
+        <div class="info-box"><p><strong>Breed:</strong> Blue and yellow macaw</p></div>
+        <div class="health-box">
+            <button class="btn small">Health Info</button>
+            <div style="margin-top:8px;color:var(--muted);">Vaccinated ✅</div>
+        </div>
+        <div class="pet-actions">
+            <button class="btn primary adopt" data-pet="Coco">Adopt</button>
+        </div>
+    </div>
+</section>
+
+<section id="pet-details-thumper" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="pets">Back</button>
+    </div>
+    <div class="card pet-box container">
+        <img src="rab1.jpg" alt="Thumper" class="pet-img">
+        <h2>Thumper</h2>
+        <p class="muted">Mini Rex • 7 months</p>
+        <p style="margin-top: 15px;">A gentle and fluffy rabbit with incredibly soft, velvety fur.</p>
+        <div class="info-box"><p><strong>Breed:</strong> Mini Rex</p></div>
+        <div class="health-box">
+            <button class="btn small">Health Info</button>
+            <div style="margin-top:8px;color:var(--muted);">Vaccinated ✅ | Neutered ✅</div>
+        </div>
+        <div class="pet-actions">
+            <button class="btn primary adopt" data-pet="Thumper">Adopt</button>
+        </div>
+    </div>
+</section>
+
+    <section id="adopt" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="pets">Back</button>
+    </div>
+
+    <div class="form-card card container">
+      <h2>Adoption Form</h2>
+      <p class="muted small">Adopting: <strong id="adopt-display">—</strong></p>
+
+      <form id="adopt-form">
+        <input id="adopt-pet-hidden" type="hidden" name="pet">
+        <label>Your Full Name</label>
+        <input id="adopt-name" required>
+        <label>Email</label>
+        <input id="adopt-email" type="email" required>
+        <label>Phone</label>
+        <input id="adopt-phone" required>
+        <label>Why do you want to adopt?</label>
+        <textarea id="adopt-reason" required></textarea>
+
+        <button type="submit" class="btn primary full">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+    <section id="submit" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="pets">Back</button>
+      </div>
+
+    <div class="card success-card container">
+      <div class="tick">✔</div>
+      <h2>Request Submitted Successfully!</h2>
+      <p class="muted">Our team will contact you within 24 hours.</p>
+      <button class="btn outline" data-home>Back to Home</button>
+    </div>
+  </section>
+
+    <section id="profile" class="page" style="display:none">
+    <div class="top-row">
+      <button class="home-btn" data-home>Home</button>
+    </div>
+
+    <div class="profile-card card container">
+      <div class="profile-head">
+        <img id="profile-pic" src="profile.jpg" alt="profile" class="profile-img">
+        <div>
+          <h2 id="profile-name">User</h2>
+          <p id="profile-email" class="muted">user@example.com</p>
+        </div>
+      </div>
+
+      <div class="profile-actions">
+        <button class="profile-link" data-target="adopted" data-back="profile">Adoption</button>
+        <button class="profile-link" data-target="prev-adopted" data-back="profile">Previously Adopted</button>
+        <button class="profile-link" data-target="liked" data-back="profile">Liked Pets</button>
+        <button class="profile-link" data-target="settings" data-back="profile">Settings</button>
+      </div>
+
+      <div id="profile-list" class="profile-list"></div>
+
+      <div style="margin-top:12px">
+        <button id="logout" class="btn outline">Logout</button>
+      </div>
+    </div>
+  </section>
+
+    <section id="adopted" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="profile">Back</button>
+    </div>
+    <div class="container card">
+      <h2>Your Adoption Requests</h2>
+      <div id="adopted-list"></div>
+    </div>
+  </section>
+
+    <section id="prev-adopted" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="profile">Back</button>
+      </div>
+    <div class="container card">
+      <h2>Previously Adopted</h2>
+      <div id="prev-list"></div>
+    </div>
+  </section>
+
+    <section id="liked" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="profile">Back</button>
+      </div>
+    <div class="container card">
+      <h2>Liked Pets</h2>
+      <div id="likes-list"></div>
+    </div>
+  </section>
+
+    <section id="settings" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="profile">Back</button>
+      </div>
+    <div class="container card">
+      <h2>Settings</h2>
+      <p class="muted">Simple settings placeholder (you can add controls here later).</p>
+    </div>
+  </section>
+
+    <section id="about" class="page" style="display:none">
+    <div class="top-row">
+      <button class="back-btn" data-back="index">Home</button>
+    </div>
+	   <div class="container">
+
+        <h1 class="title">Our Mission</h1>
+
+        <p class="subtitle">
+            We believe every pet deserves a safe, loving and happy home.
+            Through responsible adoption, we save lives and inspire kindness.
+        </p>
+
+        <div class="mission-grid">
+
+            <div class="mission-card">
+                <h3>🐾 Rescue</h3>
+                <p>We rescue abandoned, injured, and homeless pets who need urgent care.</p>
+            </div>
+
+            <div class="mission-card">
+                <h3>🏡 Rehome</h3>
+                <p>We match loving families with pets who are searching for their forever home.</p>
+            </div>
+			<div class="mission-card">
+				<h3>❤️ Care</h3>
+				<p>We provide medical treatment, vaccinations, and spaying/neutering services.</p>
+			</div>
+			 <div class="about-images">
+        <img src="Gp.jpg"Animals" class="about-img">
+       
+      </div>
+		</div>
+
+      <div style="margin-top:12px">
+        <button class="btn primary" data-target="pets">Adopt Now</button>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2025 Pawfect Homes. All rights reserved.</p>
+        <p>Made with <span style="color: var(--accent);">♥</span> for our furry friends.</p>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
